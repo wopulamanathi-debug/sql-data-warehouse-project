@@ -1,3 +1,17 @@
+/*
+This a stored procedure created to Load the Bronz layer
+
+Script Purpose:
+This procedure Loads data into the Bronze Schema from external csv file.
+It truncates the Bronze table before loading.
+It uses BULK INSERT command
+
+Parameters?
+None. This Procedure takes No parameters
+*/
+
+
+
 CREATE OR ALTER PROCEDURE bronze.load_bronze AS
 BEGIN
 	DECLARE @start_time DATETIME, @end_time DATETIME, @batch_start_time DATETIME, @batch_end_time DATETIME;
